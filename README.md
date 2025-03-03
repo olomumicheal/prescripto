@@ -1,80 +1,100 @@
 # Prescripto - Full Stack Doctor Appointment Booking System
 
 ## Live Demo
-[Prescripto](https://prescripto.vercel.app/)
+[Prescripto - Live Application](https://prescripto.vercel.app/)
 
-## About the Project
-Prescripto is a **full-stack doctor appointment booking system** designed to streamline the booking process for hospitals and medical professionals. It features a **three-tier authentication system** catering to **patients, doctors, and administrators**.
+## Figma Design Reference
+[Prescripto - UI Design](https://www.figma.com/design/ZLkjwG5ehxNRrC4SUA2WG7/Prescripto---UI-Design)
 
-## Key Features
-### 👩‍⚕️ Patients
-- Sign up and log in securely.
-- Book appointments with available doctors.
-- Manage booked appointments.
-- View and track appointment history.
+## Project Overview
+Prescripto is a full-stack doctor appointment booking system designed for hospitals and individual practitioners. It includes three levels of authentication, allowing patients, doctors, and administrators to manage appointments efficiently.
 
-### 🏥 Doctors
-- Secure login for doctors.
-- Manage and view scheduled appointments.
-- Track earnings and update profiles from the dashboard.
+### Key Features
+- **Patient Module:**
+  - User authentication and role-based access control.
+  - Appointment booking system.
+  - Dashboard to manage booked appointments.
+  - Profile management.
+  
+- **Doctor Module:**
+  - Secure login with role-based access.
+  - Appointment management and scheduling.
+  - Earnings dashboard.
+  - Profile update functionality.
 
-### 🔧 Admin Dashboard
-- Oversee and manage all appointments.
-- Manage doctor profiles.
-- Ensure a seamless booking experience for users.
+- **Admin Module:**
+  - Comprehensive dashboard to manage doctors and appointments.
+  - User management and role assignment.
+  - System analytics and reports.
 
-## Upcoming Features
-- **Online Payment Gateway**: Integration of a secure payment gateway to allow patients to pay their consultation fees online.
-- **Advanced Notifications**: Email and SMS notifications for appointment confirmations and reminders.
-- **User Analytics**: Insights into patient bookings and doctor performance.
+- **Upcoming Features:**
+  - Integration of an online payment gateway for appointment fees.
+  - Enhanced user notifications and reminders.
 
-## Technologies Used
-- **Frontend**: React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (Mongoose)
-- **Authentication**: JWT
-- **Deployment**: Vercel (Frontend), Render/Heroku (Backend)
+## Tech Stack
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (with Mongoose ODM)
+- **Authentication:** JSON Web Token (JWT), bcrypt
+- **Deployment:** Vercel (Frontend), vercel (Backend)
 
 ## Installation Guide
-### Prerequisites
-Ensure you have the following installed:
-- Node.js (v18+ recommended)
-- MongoDB (local or Atlas)
-- Git
-
-### Setup Steps
-1. **Clone the repository:**
-   ```sh
+1. Clone the repository:
+   ```bash
    git clone https://github.com/olomumicheal/prescripto.git
-   cd prescripto
    ```
-2. **Install dependencies:**
-   ```sh
+2. Navigate to the backend folder:
+   ```bash
    cd backend
-   npm install
-   cd ../frontend
+   ```
+3. Install dependencies:
+   ```bash
    npm install
    ```
-3. **Set up environment variables:**
-   - Create a `.env` file in the `backend` directory and configure:
-     ```env
-     MONGO_URI=your_mongodb_connection_string
-     JWT_SECRET=your_secret_key
-     ```
-4. **Run the application:**
-   ```sh
-   cd backend
-   npm start
+4. Set up the environment variables in a `.env` file:
+   ```env
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
    ```
-   In another terminal:
-   ```sh
+5. Start the backend server:
+   ```bash
+   npm run dev
+   ```
+6. Navigate to the frontend folder:
+   ```bash
    cd frontend
-   npm start
+   ```
+7. Install frontend dependencies:
+   ```bash
+   npm install
+   ```
+8. Start the frontend application:
+   ```bash
+   npm run dev
    ```
 
-## Contribution
-Feel free to fork this project and submit a pull request with improvements!
+## Advanced Feature Suggestions for HelpMum
+To make this project more suitable for HelpMum and increase its impact, the following advanced features can be integrated:
 
-## License
-This project is licensed under the MIT License.
+- **AI-Powered Doctor Recommendations:**
+  - Implement machine learning to suggest doctors based on user history and preferences.
+  
+- **Telemedicine and Video Consultations:**
+  - Integrate WebRTC for secure video consultations.
+  
+- **Electronic Health Records (EHR) Management:**
+  - Secure storage of patient medical history and reports.
+
+- **Multi-Language and Accessibility Support:**
+  - Localized language options for broader reach.
+
+- **Automated Appointment Reminders:**
+  - SMS and email notifications for upcoming appointments.
+
+- **Maternal and Child Healthcare Features:**
+  - Custom appointment scheduling for prenatal and postnatal care.
+  - Vaccination tracking system.
+
+## Conclusion
+Prescripto is a scalable solution for hospitals and individual doctors looking to digitize their appointment management system. By integrating advanced features like AI-based recommendations and telemedicine, this platform can significantly contribute to improving healthcare accessibility, particularly in maternal and child health services, aligning well with HelpMum’s mission.
 
