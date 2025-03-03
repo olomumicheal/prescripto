@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className='flex items-center gap-2 text-xs'>
 
         <a href='#' style={{ display: 'flex', alignItems: 'center', fontSize: '1.2em' }}>
-  <FaUserDoctor style={{ marginRight: '8px' }} />DocNet
+  <FaUserDoctor style={{ marginRight: '8px' }} />Prescripto
 </a>
 
         <p className='border px-2.5 py-0.5 rounded-full border-gray-500 text-gray-600'>{aToken ? 'Admin' : 'Doctor'}</p>
